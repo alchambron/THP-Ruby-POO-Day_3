@@ -4,7 +4,7 @@
 ### Réflexion
 > Quels objets physiques pourraient être codés en objets Ruby => Cela te donnera des pistes pour définir tes classes
 
-**Listes des différents **
+**Listes des différents**
 * Game :  Class qui permet de lancer le jeu
 * Player : Class qui ressences les différents user
 * Board : Class qui représente le board 
