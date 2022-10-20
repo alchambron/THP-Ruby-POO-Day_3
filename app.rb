@@ -1,6 +1,8 @@
 # Calling application
-require_relative './lib/application.rb'
+require_relative './lib/application'
 
+
+perform
 
 
 

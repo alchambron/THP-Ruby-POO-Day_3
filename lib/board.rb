@@ -29,25 +29,25 @@ class Board
   # Testing possibility if it's a win or not
   def victory
     # test for player 1
-    return 1 if @boardcase[0].sign == 'X' && @boardcase[1].sign == 'X' && @boardcase[2].sign == 'X'
-    return 1 if @boardcase[3].sign == 'X' && @boardcase[4].sign == 'X' && @boardcase[5].sign == 'X'
-    return 1 if @boardcase[6].sign == 'X' && @boardcase[7].sign == 'X' && @boardcase[8].sign == 'X'
-    return 1 if @boardcase[0].sign == 'X' && @boardcase[3].sign == 'X' && @boardcase[6].sign == 'X'
-    return 1 if @boardcase[1].sign == 'X' && @boardcase[4].sign == 'X' && @boardcase[7].sign == 'X'
-    return 1 if @boardcase[2].sign == 'X' && @boardcase[5].sign == 'X' && @boardcase[8].sign == 'X'
-    return 1 if @boardcase[0].sign == 'X' && @boardcase[4].sign == 'X' && @boardcase[8].sign == 'X'
-    return 1 if @boardcase[2].sign == 'X' && @boardcase[4].sign == 'X' && @boardcase[6].sign == 'X'
+    return 1 if @boardcase[0].value == 'X' && @boardcase[1].value == 'X' && @boardcase[2].value == 'X'
+    return 1 if @boardcase[3].value == 'X' && @boardcase[4].value == 'X' && @boardcase[5].value == 'X'
+    return 1 if @boardcase[6].value == 'X' && @boardcase[7].value == 'X' && @boardcase[8].value == 'X'
+    return 1 if @boardcase[0].value == 'X' && @boardcase[3].value == 'X' && @boardcase[6].value == 'X'
+    return 1 if @boardcase[1].value == 'X' && @boardcase[4].value == 'X' && @boardcase[7].value == 'X'
+    return 1 if @boardcase[2].value == 'X' && @boardcase[5].value == 'X' && @boardcase[8].value == 'X'
+    return 1 if @boardcase[0].value == 'X' && @boardcase[4].value == 'X' && @boardcase[8].value == 'X'
+    return 1 if @boardcase[2].value == 'X' && @boardcase[4].value == 'X' && @boardcase[6].value == 'X'
     # Test for player 2
-    return 2 if @boardcase[0].sign == 'O' && @boardcase[1].sign == 'O' && @boardcase[2].sign == 'O'
-    return 2 if @boardcase[3].sign == 'O' && @boardcase[4].sign == 'O' && @boardcase[5].sign == 'O'
-    return 2 if @boardcase[6].sign == 'O' && @boardcase[7].sign == 'O' && @boardcase[8].sign == 'O'
-    return 2 if @boardcase[0].sign == 'O' && @boardcase[3].sign == 'O' && @boardcase[6].sign == 'O'
-    return 2 if @boardcase[1].sign == 'O' && @boardcase[4].sign == 'O' && @boardcase[7].sign == 'O'
-    return 2 if @boardcase[2].sign == 'O' && @boardcase[5].sign == 'O' && @boardcase[8].sign == 'O'
-    return 2 if @boardcase[0].sign == 'O' && @boardcase[4].sign == 'O' && @boardcase[8].sign == 'O'
-    return 2 if @boardcase[2].sign == 'O' && @boardcase[4].sign == 'O' && @boardcase[6].sign == 'O'
+    return 2 if @boardcase[0].value == 'O' && @boardcase[1].value == 'O' && @boardcase[2].value == 'O'
+    return 2 if @boardcase[3].value == 'O' && @boardcase[4].value == 'O' && @boardcase[5].value == 'O'
+    return 2 if @boardcase[6].value == 'O' && @boardcase[7].value == 'O' && @boardcase[8].value == 'O'
+    return 2 if @boardcase[0].value == 'O' && @boardcase[3].value == 'O' && @boardcase[6].value == 'O'
+    return 2 if @boardcase[1].value == 'O' && @boardcase[4].value == 'O' && @boardcase[7].value == 'O'
+    return 2 if @boardcase[2].value == 'O' && @boardcase[5].value == 'O' && @boardcase[8].value == 'O'
+    return 2 if @boardcase[0].value == 'O' && @boardcase[4].value == 'O' && @boardcase[8].value == 'O'
+    return 2 if @boardcase[2].value == 'O' && @boardcase[4].value == 'O' && @boardcase[6].value == 'O'
     # Test for Null Match
-    return 0 if @turn == 9
+    return 0 if @count_turn == 9
 
     3
   end
